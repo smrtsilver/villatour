@@ -1,0 +1,583 @@
+{% load static %}
+<html lang="zxx" class="no-js">
+  <head>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+{#    <link rel="shortcut icon" href="img/fav.png" />#}
+
+    <meta name="author" content="CodePixar" />
+
+    <meta name="description" content="" />
+
+    <meta name="keywords" content="" />
+
+    <meta charset="UTF-8" />
+
+    <title>Ozberk</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:100,300,500"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="{% static "landing/css/linearicons.css" %}" />
+    <link rel="stylesheet" href="{% static "landing/css/owl.carousel.css" %}" />
+    <link rel="stylesheet" href="{% static "landing/css/font-awesome.min.css" %}" />
+    <link rel="stylesheet" href="{% static "landing/css/nice-select.css" %}" />
+    <link rel="stylesheet" href="{% static "landing/css/magnific-popup.css" %}" />
+    <link rel="stylesheet" href="{% static "landing/css/bootstrap.css" %}" />
+    <link rel="stylesheet" href="{% static "landing/css/main.css" %}" />
+    <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+  </head>
+  <body>
+    <div class="oz-body-wrap">
+      <header class="default-header">
+        <div class="container-fluid">
+          <div class="header-wrap">
+            <div
+              class="header-top d-flex justify-content-between align-items-center"
+            >
+              <div class="logo">
+                <a href="index.html"><img src="{% static "landing/img/logo.png" %}" alt="" /></a>
+              </div>
+              <div class="main-menubar d-flex align-items-center">
+                <nav class="hide">
+                  <a href="index.html">Home</a>
+                  <a href="generic.html">Generic</a>
+                  <a href="elements.html">Elements</a>
+                </nav>
+                <div class="menu-bar"><span class="lnr lnr-menu"></span></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+      <h1
+        style="position: absolute; z-index: 9; right: 150px; top: 250px"
+        dir="rtl"
+      >
+        <div
+          class="mb-10"
+          style="
+            background-color: #23120b;
+            display: inline-block;
+            color: ghostwhite;
+          "
+        >
+          قدم در
+        </div>
+        <div
+          style="display: block; background-color: #fdb827; color: ghostwhite"
+        >
+          رویای خود بگذارید
+        </div>
+      </h1>
+      <section class="relative" style="z-index: 1" style="position: fixed">
+        <!-- aframe Area -->
+        <a-scene vr-mode-ui="enabled: false" embedded>
+          <a-sky src="{% static "landing/img/VR/home1.jpg" %}" rotation="0 -130 0"></a-sky>
+        </a-scene>
+        <!-- end of aframe -->
+      </section>
+
+      <section class="team-force-area pt-60" dir="rtl">
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-lg-6">
+              <img class="img-fluid" src="{% static "landing/img/t1.png" %}" alt="" />
+            </div>
+            <div class="col-lg-6">
+              <div class="story-content">
+                <h2>Actual Team Force</h2>
+                <p class="mt-30 mb-30">
+                  Few would argue that, despite the advancements of feminism
+                  over the past three decades, women still face a double
+                  standard when it comes to their behavior. While men’s
+                  borderline-inappropriate behavior is often laughed off as
+                  “boys will be boys,” women face higher conduct standards –
+                  especially in the workplace.
+                </p>
+                <a href="#" class="genric-btn primary circle arrow"
+                  >View More<span class="lnr lnr-arrow-right"></span
+                ></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="feature-area pt-80 pb-40">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-6">
+              <div
+                class="single-feature d-flex justify-content-between align-items-top"
+              >
+                <div class="icon">
+                  <span class="lnr lnr-laptop-phone"></span>
+                </div>
+                <div class="desc">
+                  <h2 class="text-uppercase">Responsive layout</h2>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                    sed do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                    ullamco.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div
+                class="single-feature d-flex justify-content-between align-items-top"
+              >
+                <div class="icon">
+                  <span class="lnr lnr-sun"></span>
+                </div>
+                <div class="desc">
+                  <h2 class="text-uppercase">Light &amp; Dark Color Schemes</h2>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                    sed do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                    ullamco.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div
+                class="single-feature d-flex justify-content-between align-items-top"
+              >
+                <div class="icon">
+                  <span class="lnr lnr-picture"></span>
+                </div>
+                <div class="desc">
+                  <h2 class="text-uppercase">Parallax Support</h2>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                    sed do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                    ullamco.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div
+                class="single-feature d-flex justify-content-between align-items-top"
+              >
+                <div class="icon">
+                  <span class="lnr lnr-laptop"></span>
+                </div>
+                <div class="desc">
+                  <h2 class="text-uppercase">Retina Ready Graphics</h2>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                    sed do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                    ullamco.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div
+                class="single-feature d-flex justify-content-between align-items-top"
+              >
+                <div class="icon">
+                  <span class="lnr lnr-camera-video"></span>
+                </div>
+                <div class="desc">
+                  <h2 class="text-uppercase">HTML5 Video</h2>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                    sed do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                    ullamco.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div
+                class="single-feature d-flex justify-content-between align-items-top"
+              >
+                <div class="icon">
+                  <span class="lnr lnr-rocket"></span>
+                </div>
+                <div class="desc">
+                  <h2 class="text-uppercase">Powerful Performance</h2>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                    sed do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                    ullamco.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="video-area pt-40 pb-40">
+        <div class="overlay overlay-bg"></div>
+        <div class="container">
+          <div class="video-content">
+            <a
+              href="https://www.youtube.com/watch?v=0O2aH4XLbto"
+              class="play-btn"
+              ><img src="{% static "landing/img/play-btn.png" %}" alt=""
+            /></a>
+            <div class="video-desc">
+              <h3 class="h2 text-white text-uppercase">
+                Being unique is the preference now-a-days
+              </h3>
+              <h4 class="text-white">Youtube video will appear in popover</h4>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="quote-area pt-60 pb-60">
+        <div class="container">
+          <div class="row">
+            <div class="counter-left col-lg-4">
+              <h2>5962</h2>
+              <p>Project Completed</p>
+            </div>
+            <div
+              class="active-bottle-carousel col-lg-8 align-self-center owl-carousel owl-theme owl-loaded"
+            >
+              <div class="owl-stage-outer">
+                <div
+                  class="owl-stage"
+                  style="
+                    transform: translate3d(-3650px, 0px, 0px);
+                    transition: all 0.25s ease 0s;
+                    width: 5110px;
+                  "
+                >
+                  <div
+                    class="owl-item cloned"
+                    style="width: 730px; margin-right: 0px"
+                  >
+                    <div class="item carousel-content slider-right">
+                      <p>
+                        “Few would argue that, despite the advancements of
+                        feminism over the past three decades, women still face a
+                        double standard when it comes to their behavior. While
+                        men’s borderline-inappropriate behavior.
+                      </p>
+                      <span class="slide-name text-uppercase"
+                        >Mark Wiens, Google Inc.</span
+                      >
+                    </div>
+                  </div>
+                  <div
+                    class="owl-item cloned"
+                    style="width: 730px; margin-right: 0px"
+                  >
+                    <div class="item carousel-content slider-right">
+                      <p>
+                        “Few would argue that, despite the advancements of
+                        feminism over the past three decades, women still face a
+                        double standard when it comes to their behavior. While
+                        men’s borderline-inappropriate behavior.
+                      </p>
+                      <span class="slide-name text-uppercase"
+                        >Mark Wiens, Google Inc.</span
+                      >
+                    </div>
+                  </div>
+                  <div class="owl-item" style="width: 730px; margin-right: 0px">
+                    <div class="item carousel-content slider-right">
+                      <p>
+                        “Few would argue that, despite the advancements of
+                        feminism over the past three decades, women still face a
+                        double standard when it comes to their behavior. While
+                        men’s borderline-inappropriate behavior.
+                      </p>
+                      <span class="slide-name text-uppercase"
+                        >Mark Wiens, Google Inc.</span
+                      >
+                    </div>
+                  </div>
+                  <div class="owl-item" style="width: 730px; margin-right: 0px">
+                    <div class="item carousel-content slider-right">
+                      <p>
+                        “Few would argue that, despite the advancements of
+                        feminism over the past three decades, women still face a
+                        double standard when it comes to their behavior. While
+                        men’s borderline-inappropriate behavior.
+                      </p>
+                      <span class="slide-name text-uppercase"
+                        >Mark Wiens, Google Inc.</span
+                      >
+                    </div>
+                  </div>
+                  <div class="owl-item" style="width: 730px; margin-right: 0px">
+                    <div class="item carousel-content slider-right">
+                      <p>
+                        “Few would argue that, despite the advancements of
+                        feminism over the past three decades, women still face a
+                        double standard when it comes to their behavior. While
+                        men’s borderline-inappropriate behavior.
+                      </p>
+                      <span class="slide-name text-uppercase"
+                        >Mark Wiens, Google Inc.</span
+                      >
+                    </div>
+                  </div>
+                  <div
+                    class="owl-item cloned active"
+                    style="width: 730px; margin-right: 0px"
+                  >
+                    <div class="item carousel-content slider-right">
+                      <p>
+                        “Few would argue that, despite the advancements of
+                        feminism over the past three decades, women still face a
+                        double standard when it comes to their behavior. While
+                        men’s borderline-inappropriate behavior.
+                      </p>
+                      <span class="slide-name text-uppercase"
+                        >Mark Wiens, Google Inc.</span
+                      >
+                    </div>
+                  </div>
+                  <div
+                    class="owl-item cloned"
+                    style="width: 730px; margin-right: 0px"
+                  >
+                    <div class="item carousel-content slider-right">
+                      <p>
+                        “Few would argue that, despite the advancements of
+                        feminism over the past three decades, women still face a
+                        double standard when it comes to their behavior. While
+                        men’s borderline-inappropriate behavior.
+                      </p>
+                      <span class="slide-name text-uppercase"
+                        >Mark Wiens, Google Inc.</span
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="owl-controls">
+                <div class="owl-nav">
+                  <div class="owl-prev" style="display: none">prev</div>
+                  <div class="owl-next" style="display: none">next</div>
+                </div>
+                <div class="owl-dots">
+                  <div class="owl-dot active"><span></span></div>
+                  <div class="owl-dot"><span></span></div>
+                  <div class="owl-dot"><span></span></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="service-area no-gutters">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="image-left col-lg-5 col-sm-4">
+              <div class="overlay overlay-bg"></div>
+              <img class="img-fluid" src="{% static "landing/img/service.jpg" %}" alt="" />
+            </div>
+            <div
+              class="service-right col-lg-6 col-sm-8 text-center align-self-center"
+            >
+              <div class="row no-gutters">
+                <div class="single-service pt-40 pb-40 bbr bbr-b">
+                  <span class="lnr lnr-laptop-phone"></span>
+                  <h6>Responsive Framework</h6>
+                </div>
+                <div class="single-service pt-40 pb-40 bbr bbr-b">
+                  <span class="lnr lnr-magic-wand"></span>
+                  <h6>Geniusly Transformable</h6>
+                </div>
+                <div class="single-service pt-40 pb-40 bbr-b">
+                  <span class="lnr lnr-cog"></span>
+                  <h6>Powerfully Customizable</h6>
+                </div>
+                <div class="single-service pt-40 pb-40 bbr">
+                  <span class="lnr lnr-user"></span>
+                  <h6>Industrial Support</h6>
+                </div>
+                <div class="single-service pt-40 pb-40 bbr">
+                  <span class="lnr lnr-poop"></span>
+                  <h6>Extensively Extendable</h6>
+                </div>
+                <div class="single-service pt-40 pb-40">
+                  <span class="lnr lnr-gift"></span>
+                  <h6>Beautifully Presented</h6>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="contact-area pt-80 pb-80">
+        <div class="container">
+          <div class="row">
+            <div class="single-contact col-lg-3">
+              <h2 class="text-uppercase">Visit Our Office</h2>
+              <p>
+                56/8, bir uttam qazi nuruzzaman road, west panthapath,
+                kalabagan, Dhanmondi, Dhaka - 1205
+              </p>
+            </div>
+            <div class="single-contact col-lg-3">
+              <h2 class="text-uppercase">Let’s call us</h2>
+              <p>
+                Phone 01: 012-6532-568-9746 <br />
+                Phone 02: 012-6532-568-9748 <br />
+                FAX: 02-6532-568-746
+              </p>
+            </div>
+            <div class="single-contact col-lg-3">
+              <h2 class="text-uppercase">Let’s Email Us</h2>
+              <p>
+                hello@colorlib.com <br />
+                mainhelpinfo@colorlib.com <br />
+                infohelp@colorlib.com
+              </p>
+            </div>
+            <div class="single-contact col-lg-3">
+              <h2 class="text-uppercase">Customer Support</h2>
+              <p>
+                support@colorlib.com <br />
+                emergencysupp@colorlib.com <br />
+                extremesupp@colorlib.com
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <footer class="section-gap">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="subcribe-form col-lg-6">
+              <div id="mc_embed_signup">
+                <form
+                  target="_blank"
+                  novalidate="true"
+                  action="https://spondonit.us12.list-manage.com/subscribe/post?u=1462626880ade1ac87bd9c93a&amp;id=92a4423d01"
+                  method="get"
+                  class="subscription relative"
+                >
+                  <input
+                    type="email"
+                    name="EMAIL"
+                    placeholder="Enter Email To Our Newsletter"
+                    onfocus="this.placeholder = ''"
+                    onblur="this.placeholder = 'Enter Email To Our Newsletter'"
+                    required=""
+                  />
+                  <div style="position: absolute; left: -5000px">
+                    <input
+                      type="text"
+                      name="b_36c4fd991d266f23781ded980_aefe40901a"
+                      tabindex="-1"
+                      value=""
+                    />
+                  </div>
+                  <button
+                    class="primary-btn white-bg d-inline-flex align-items-center"
+                  >
+                    <span class="mr-10">Get Started</span
+                    ><span class="lnr lnr-arrow-right"></span>
+                  </button>
+                  <div class="info"></div>
+                </form>
+              </div>
+            </div>
+          </div>
+          <div class="row pt-60">
+            <div class="col-lg-3 col-sm-6">
+              <div class="single-footer-widget">
+                <h6 class="text-uppercase mb-20">Top Product</h6>
+                <ul class="footer-nav">
+                  <li><a href="#">Managed Website</a></li>
+                  <li><a href="#">Manage Reputation</a></li>
+                  <li><a href="#">Power Tools</a></li>
+                  <li><a href="#">Marketing Service</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-lg-3 col-sm-6">
+              <div class="single-footer-widget">
+                <h6 class="text-uppercase mb-20">Navigation</h6>
+                <ul class="footer-nav">
+                  <li><a href="#">Home</a></li>
+                  <li><a href="#">Main Features</a></li>
+                  <li><a href="#">Offered Services</a></li>
+                  <li><a href="#">Latest Portfolio</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-lg-3 col-sm-6">
+              <div class="single-footer-widget">
+                <h6 class="text-uppercase mb-20">Compare</h6>
+                <ul class="footer-nav">
+                  <li><a href="#">Works &amp; Builders</a></li>
+                  <li><a href="#">Works &amp; Wordpress</a></li>
+                  <li><a href="#">Works &amp; Templates</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-lg-3 col-sm-6">
+              <div class="single-footer-widget">
+                <h6 class="text-uppercase mb-20">Instragram Feed</h6>
+                <ul class="instafeed d-flex flex-wrap">
+                  <li><img src="{% static "landing/img/i1.jpg" %}" alt="" /></li>
+                  <li><img src="{% static "landing/img/i2.jpg" %}" alt="" /></li>
+                  <li><img src="{% static "landing/img/i3.jpg" %}" alt="" /></li>
+                  <li><img src="{% static "landing/img/i4.jpg" %}" alt="" /></li>
+                  <li><img src="{% static "landing/img/i5.jpg" %}" alt="" /></li>
+                  <li><img src="{% static "landing/img/i6.jpg" %}" alt="" /></li>
+                  <li><img src="{% static "landing/img/i7.jpg" %}" alt="" /></li>
+                  <li><img src="{% static "landing/img/i8.jpg" %}" alt="" /></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div
+            class="footer-bottom d-flex justify-content-between align-items-center flex-wrap"
+          >
+            <p class="footer-text m-0">
+              Copyright © 2017 All rights reserved | This template is made with
+              <i class="fa fa-heart-o" aria-hidden="true"></i> by
+              <a href="https://colorlib.com">Colorlib</a>
+            </p>
+            <div class="footer-social d-flex align-items-center">
+              <a href="#"><i class="fa fa-facebook"></i></a>
+              <a href="#"><i class="fa fa-twitter"></i></a>
+              <a href="#"><i class="fa fa-dribbble"></i></a>
+              <a href="#"><i class="fa fa-behance"></i></a>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script src="{% static "landing/js/vendor/jquery-2.2.4.min.js" %}"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"
+      integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4"
+      crossorigin="anonymous"
+    ></script>
+    <script src="{% static "landing/js/vendor/bootstrap.min.js" %}"></script>
+    <script src="{% static "landing/js/jquery.ajaxchimp.min.js" %}"></script>
+    <script src="{% static "landing/js/owl.carousel.min.js" %}"></script>
+    <script src="{% static "landing/js/jquery.nice-select.min.js" %}"></script>
+    <script src="{% static "landing/js/jquery.magnific-popup.min.js" %}"></script>
+    <script src="{% static "landing/js/main.js" %}"></script>
+  </body>
+</html>

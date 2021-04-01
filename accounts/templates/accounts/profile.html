@@ -1,0 +1,479 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+	<meta charset="utf-8">
+	<title>villa 3D | بازدید مجازی</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="A responsive website template made exclusively by themeum">
+	<meta name="author" content="themeum">
+	<!-- FAVICON -->
+	
+	<link rel="shortcut icon" href={% static "accounts/favicons/favicon.ico" %}>
+	<meta name="msapplication-config" content={% static "accounts/favicons/browserconfig.xml" %}>
+
+	<!-- CSS -->
+	<link rel="stylesheet" href="{% static "accounts/css/bootstrap.min.css" %}">
+{#	<link rel="stylesheet" href="{% static "accounts/css/font-awesome.min.css" %}">#}
+	<link rel="stylesheet" href="{% static "accounts/css/animate.min.css" %}">
+	<link rel="stylesheet" href="{% static "accounts/css/responsive.css" %}">
+	<link rel="stylesheet" href="{% static "accounts/css/lightbox.css" %}}">
+	<link rel="stylesheet" href="{% static "accounts/css/owl.carousel.css" %}">
+	<link rel="stylesheet" href="{% static "accounts/css/main.css" %}">
+
+	<!--[if lt IE 9]>
+	<script src="{% static "accounts/js/html5shiv.js" %}"></script>
+{#	<script src="{% static "accounts/js/respond.min.js" %}"></script>#}
+	<![endif]-->
+	
+	<!-- Header scripts -->
+	<script src="{% static "accounts/js/modernizr-2.8.3.min.js" %}"></script>
+	<script src="{% static "accounts/js/queryloader2.min.js" %}"></script>
+
+	<!-- =========================
+	   Preloader
+	============================== -->
+	<script>
+	    window.addEventListener('DOMContentLoaded', function() {
+	        "use strict";
+	        new QueryLoader2(document.querySelector("body"), {
+	            barColor: "#e64e3e",
+	            backgroundColor: "#fff",
+	            percentage: true,
+	            barHeight: 1,
+	            minimumTime: 200,
+	            fadeOutTime: 1000
+	        });
+	    });
+	</script>
+	<script src="https://kit.fontawesome.com/b4f42c8d48.js" crossorigin="anonymous"></script>
+</head> <!-- head -->
+<body>
+	
+	<!-- ============== start wrapper  ============== -->
+	<div id="wrapper" class="about-page">
+		<!-- main-nav -->
+		<div class="main-nav other-page-nav">
+			<div class="logo-left">
+				<a href="index.html" class="pull-left">
+					<img src="{% static "accounts/img/logo-header.png" %}" alt="logo">
+				</a>
+
+			</div>
+			<div class="languages">
+				
+				<a href="javascript:void(0)" class="menu-trigger">
+					<i class="fa fa-bars"></i>
+				 </a>
+			</div>
+		</div> <!-- //end main-nav -->
+
+		<!--=========================
+			Start area for Menu 
+		============================== -->
+		<!-- <nav class="nav-menu">
+			 <div class="nav-header overflow">
+			 	<a href="index.html"><img src="img/logo-nav.png" class="pull-left" alt="logo"></a>
+			 	<p class="dismiss-button pull-right animated zoomIn">
+			 		<img src="img/dismiss.png" alt="dismiss">
+			 	</p>
+			 </div>
+			<ul>
+				<li><a href="index.html">home <span class="info animated fadeInRight">We are Jollyany and we make really beautiful and amazing stuff.</span></a></li>
+				<li class="active"><a href="about.html">About <span class="info animated fadeInRight">We are Jollyany and we make really beautiful and amazing stuff.</span></a></li>
+				<li><a href="services.html">Service <span class="info animated fadeInRight">We are Jollyany and we make really beautiful and amazing stuff.</span></a></li>
+				<li><a href="portfolio.html">Portfolio <span class="info animated fadeInRight">We are Jollyany and we make really beautiful and amazing stuff.</span></a></li>
+				<li><a href="blog.html">Blog <span class="info animated fadeInRight">We are Jollyany and we make really beautiful and amazing stuff.</span></a></li>
+				<li><a href="contact.html">Contact <span class="info animated fadeInRight">We are Jollyany and we make really beautiful and amazing stuff.</span></a></li>
+			</ul>
+		</nav> -->
+		
+		<!-- End of menu area -->
+
+
+		<!-- ============== Start About Us ============== -->
+		<section class="about-us-header overflow">
+			<div class="container">
+				<h3 class="section-title wow fadeInDown ptt50" style="font-weight: bold;">{{amlak.name}}</h3>
+				<p class="section-info col-sm-6 col-sm-offset-3 wow fadeInDown" data-wow-delay=".25s">
+					افتخار ما اعتماد شماست
+				</p>
+				<div class="header-image">
+					<p class="text-center"><img src="{{ amlak.header.url }}" alt="image"></p>
+				</div>
+			</div> <!-- //container -->
+		</section>
+		<!-- ========= //End About Us ========= -->
+
+
+
+		<!-- ============== Start some info ============== -->
+		<section class="some-info">
+			<!-- just space -->
+		</section>
+		<!-- ========= //End some info ========= -->
+
+		<!-- ============== Start our heros ============== -->
+		<section class="our-heros">
+			<div class="container-fluid no-padding">
+				<h4 class="title">آگهی های فعال فروش</h4>
+				<ul class="heres-content">
+					<li>
+						<figure class="each-hero overflow">
+							<img src="{% static "accounts/img/about/unnamed.jpg" %}" class="img-100p" alt="team">
+							<figcaption class="details caption-full-width animated fadeInDown">
+								<div class="content" >
+									<h2 class="name animated fadeInDown">ویلا دوبلکس فول امکانات</h2>
+									<h3 class="position animated fadeInDown">مازندران٬ نوشهر</h3>
+									<ul class="social-icon overflow animated fadeInUp">
+										<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+										<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+										<li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+										<li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+										<li><a href="#"><i class="fa fa-pinterest"></i></a></li>
+									</ul>
+									<p class="info animated fadeInUp">
+										ویلای پیشنهادی به مساحت 350 متر مربع و در زمینی به متراژ 460 متر مربع ساخته شده است. این ویلای جنگلی با سازه ای مدرن و با کیفیت بالا در منطقه خوش آب و هوای جنگلی و در مجموعه ای غیر بومی و تهرانی نشین و با چشم انداز جنگل و دریا واقع شده است.									</p>
+								</div>
+							</figcaption>
+						</figure>
+					</li>
+					<li>
+						<figure class="each-hero overflow">
+							<img src="{% static "accounts/img/about/team2.jpg" %}" class="img-100p" alt="team">
+							<figcaption class="details caption-full-width animated fadeInDown">
+								<div class="content">
+									<h2 class="name animated fadeInDown">خانه ویلایی شیک</h2>
+									<h3 class="position animated fadeInDown">مازندران٬ قائم شهر</h3>
+									<ul class="social-icon overflow animated fadeInUp">
+										<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+										<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+										<li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+										<li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+										<li><a href="#"><i class="fa fa-pinterest"></i></a></li>
+									</ul>
+									<p class="info animated fadeInUp">
+										ویلای پیشنهادی به مساحت 350 متر مربع و در زمینی به متراژ 460 متر مربع ساخته شده است. این ویلای جنگلی با سازه ای مدرن و با کیفیت بالا در منطقه خوش آب و هوای جنگلی و در مجموعه ای غیر بومی و تهرانی نشین و با چشم انداز جنگل و دریا واقع شده است.									</p>
+								</div>
+							</figcaption>
+						</figure>
+					</li>
+					<li>
+						<figure class="each-hero overflow">
+							<img src="{% static "accounts/img/about/team3.jpg" %}" class="img-100p" alt="team">
+							<figcaption class="details caption-full-width animated fadeInDown">
+								<div class="content">
+									<h2 class="name animated fadeInDown">ویلا فلت</h2>
+									<h3 class="position animated fadeInDown">مازندران٬ نوشهر</h3>
+									<ul class="social-icon overflow animated fadeInUp">
+										<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+										<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+										<li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+										<li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+										<li><a href="#"><i class="fa fa-pinterest"></i></a></li>
+									</ul>
+									<p class="info animated fadeInUp">
+										ویلای پیشنهادی به مساحت 350 متر مربع و در زمینی به متراژ 460 متر مربع ساخته شده است. این ویلای جنگلی با سازه ای مدرن و با کیفیت بالا در منطقه خوش آب و هوای جنگلی و در مجموعه ای غیر بومی و تهرانی نشین و با چشم انداز جنگل و دریا واقع شده است.									</p>
+								</div>
+							</figcaption>
+						</figure>
+					</li>
+					<li>
+						<figure class="each-hero overflow">
+							<img src="{% static "accounts/img/about/team4.jpg" %}" class="img-100p" alt="team">
+							<figcaption class="details caption-full-width animated fadeInDown">
+								<div class="content">
+									<h2 class="name animated fadeInDown">خانه ویلایی مدرن</h2>
+									<h3 class="position animated fadeInDown">مازندران٬ تنکابن</h3>
+									<ul class="social-icon overflow animated fadeInUp">
+										<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+										<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+										<li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+										<li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+										<li><a href="#"><i class="fa fa-pinterest"></i></a></li>
+									</ul>
+									<p class="info animated fadeInUp">
+										ویلای پیشنهادی به مساحت 350 متر مربع و در زمینی به متراژ 460 متر مربع ساخته شده است. این ویلای جنگلی با سازه ای مدرن و با کیفیت بالا در منطقه خوش آب و هوای جنگلی و در مجموعه ای غیر بومی و تهرانی نشین و با چشم انداز جنگل و دریا واقع شده است.									</p>
+								</div>
+							</figcaption>
+						</figure>
+					</li>
+					<li>
+						<figure class="each-hero overflow">
+							<img src="{% static "accounts/img/about/team5.jpg" %}" class="img-100p" alt="team">
+							<figcaption class="details caption-full-width animated fadeInDown">
+								<div class="content">
+									<h2 class="name animated fadeInDown">ویلا کلنگی</h2>
+									<h3 class="position animated fadeInDown">گیلان٬ رشت</h3>
+									<ul class="social-icon overflow animated fadeInUp">
+										<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+										<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+										<li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+										<li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+										<li><a href="#"><i class="fa fa-pinterest"></i></a></li>
+									</ul>
+									<p class="info animated fadeInUp">
+										ویلای پیشنهادی به مساحت 350 متر مربع و در زمینی به متراژ 460 متر مربع ساخته شده است. این ویلای جنگلی با سازه ای مدرن و با کیفیت بالا در منطقه خوش آب و هوای جنگلی و در مجموعه ای غیر بومی و تهرانی نشین و با چشم انداز جنگل و دریا واقع شده است.									</p>
+								</div>
+							</figcaption>
+						</figure>
+					</li>
+				</ul>
+			</div>
+		</section>
+		<!-- ========= //End our heros ========= -->
+
+
+		<!-- ============== Start Our SKILLS ============== -->
+		<!-- <section id="our-skills">
+			<div class="container">
+				<h3 class="section-title wow fadeInDown">Our  SKILLS</h3>
+				<p class="section-info col-sm-6 col-sm-offset-3 wow fadeInDown" data-wow-delay=".25s">
+					Curious? Check out some of our recent projects
+				</p>
+				<div class="row mtb100">
+					<div class="col-sm-4 single-skill">
+						<div class="wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="300ms">
+							<p class="lead">Graphics Design <span class="percentag pull-right">82%</span></p>
+							<div class="progress">
+							<div class="progress-bar progress-bar-primary six-sec-ease-in-out" role="progressbar"  data-valuetransitiongoal="82"></div>
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-4 single-skill">
+						<div class="single-skill wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="400ms">
+							<p class="lead">Web Development <span class="percentag pull-right">76%</span></p>
+							<div class="progress">
+								<div class="progress-bar progress-bar-primary six-sec-ease-in-out" role="progressbar"  data-valuetransitiongoal="76"></div>
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-4 single-skill">
+						<div class="single-skill wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="500ms">
+							<p class="lead">App Development <span class="percentag pull-right">58%</span></p>
+							<div class="progress">
+								<div class="progress-bar progress-bar-primary six-sec-ease-in-out" role="progressbar"  data-valuetransitiongoal="58"></div>
+							</div>
+						</div>
+					</div>
+				</div> 
+			</div> 
+		</section> -->
+		<!-- ========= //End Our SKILLS ========= -->
+
+
+		<!-- ============== Start work section ============== -->
+		<!-- <section id="our-work">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-md-3 col-sm-4 work-item">
+						<figure class="content wow fadeIn" data-wow-delay=".15s">
+							<img src="img/about/01.jpg" class="img-100p" alt="work">
+							<figcaption class="caption-full-width">
+								<div class="caption horizontal-vertical-center">
+									<p class="icon animated zoomIn"><a data-lightbox="lightbox" href="img/about/01.jpg"><i class="fa fa-search-plus zoom-icon"></i></a></p>
+									<p class="title animated fadeInUp">jerky</p>
+								</div>
+							</figcaption>
+						</figure>
+					</div>
+					<div class="col-md-3 col-sm-4 work-item">
+						<figure class="content wow fadeIn" data-wow-delay=".25s">
+							<img src="img/about/02.jpg" class="img-100p" alt="work">
+							<figcaption class="caption-full-width">
+								<div class="caption horizontal-vertical-center">
+									<p class="icon animated zoomIn"><a data-lightbox="lightbox" href="img/about/02.jpg"><i class="fa fa-search-plus zoom-icon"></i></a></p>
+									<p class="title animated fadeInUp">shoulder</p>
+								</div>
+							</figcaption>
+						</figure>
+					</div>
+					<div class="col-md-3 col-sm-4 work-item">
+						<figure class="content wow fadeIn" data-wow-delay=".35s">
+							<img src="img/about/03.jpg" class="img-100p" alt="work">
+							<figcaption class="caption-full-width">
+								<div class="caption horizontal-vertical-center">
+									<p class="icon animated zoomIn"><a data-lightbox="lightbox" href="img/about/03.jpg"><i class="fa fa-search-plus zoom-icon"></i></a></p>
+									<p class="title animated fadeInUp">kevin</p>
+								</div>
+							</figcaption>
+						</figure>
+					</div>
+					<div class="col-md-3 col-sm-4 work-item">
+						<figure class="content wow fadeIn" data-wow-delay=".45s">
+							<img src="img/about/04.jpg" class="img-100p" alt="work">
+							<figcaption class="caption-full-width">
+								<div class="caption horizontal-vertical-center">
+									<p class="icon animated zoomIn"><a data-lightbox="lightbox" href="img/about/04.jpg"><i class="fa fa-search-plus zoom-icon"></i></a></p>
+									<p class="title animated fadeInUp">fatback</p>
+								</div>
+							</figcaption>
+						</figure>
+					</div>
+					<div class="col-md-3 col-sm-4 work-item">
+						<figure class="content wow fadeIn" data-wow-delay=".55s">
+							<img src="img/about/05.jpg" class="img-100p" alt="work">
+							<figcaption class="caption-full-width">
+								<div class="caption horizontal-vertical-center">
+									<p class="icon animated zoomIn"><a data-lightbox="lightbox" href="img/about/05.jpg"><i class="fa fa-search-plus zoom-icon"></i></a></p>
+									<p class="title animated fadeInUp">tongue</p>
+								</div>
+							</figcaption>
+						</figure>
+					</div>
+					<div class="col-md-3 col-sm-4 work-item">
+						<figure class="content wow fadeIn" data-wow-delay=".65s">
+							<img src="img/about/06.jpg" class="img-100p" alt="work">
+							<figcaption class="caption-full-width">
+								<div class="caption horizontal-vertical-center">
+									<p class="icon animated zoomIn"><a data-lightbox="lightbox" href="img/about/06.jpg"><i class="fa fa-search-plus zoom-icon"></i></a></p>
+									<p class="title animated fadeInUp">Ribeye </p>
+								</div>
+							</figcaption>
+						</figure>
+					</div>
+					<div class="col-md-3 col-sm-4 work-item">
+						<figure class="content wow fadeIn" data-wow-delay=".65s">
+							<img src="img/about/07.jpg" class="img-100p" alt="work">
+							<figcaption class="caption-full-width">
+								<div class="caption horizontal-vertical-center">
+									<p class="icon animated zoomIn"><a data-lightbox="lightbox" href="img/about/07.jpg"><i class="fa fa-search-plus zoom-icon"></i></a></p>
+									<p class="title animated fadeInUp">sausage</p>
+								</div>
+							</figcaption>
+						</figure>
+					</div>
+					<div class="col-md-3 col-sm-4 work-item">
+						<figure class="content wow fadeIn" data-wow-delay=".65s">
+							<img src="img/about/08.jpg" class="img-100p" alt="work">
+							<figcaption class="caption-full-width">
+								<div class="caption horizontal-vertical-center">
+									<p class="icon animated zoomIn"><a data-lightbox="lightbox" href="img/about/08.jpg"><i class="fa fa-search-plus zoom-icon"></i></a></p>
+									<p class="title animated fadeInUp">MAGLIT</p>
+								</div>
+							</figcaption>
+						</figure>
+					</div>
+				</div>
+			</div> 
+		</section> -->
+		<!-- ========= //End work section ========= -->
+	
+
+
+
+
+
+		<!-- ============== Start about info ============== -->
+		<section id="about-info" class="text-center ptt100 ptb80">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-3 each-part wow zoomIn">
+						<p class="icon">
+							<img src="{% static "accounts/img/icon/custom-care.png"%}" alt="img">
+						</p>
+						<p class="title">تماس با ما</p>
+						<p class="info" dir="ltr">
+							۰۹۱۲ ۲۲۲ ۳۳ ۴۴
+						</p>
+					</div>
+					<div class="col-sm-3 each-part wow zoomIn">
+						<p class="icon">
+							<img src="{% static "accounts/img/icon/mail-info.png" %}" alt="img">
+						</p>
+						<p class="title">شبکه های اجتماعی</p>
+						<p class="info">
+							insta/amlakEmarat
+						</p>
+					</div>
+					<div class="col-sm-3 each-part wow zoomIn">
+						<p class="icon">
+							<img src="{% static "accounts/img/icon/work-time.png" %}" alt="img">
+						</p>
+						<p class="title">ساعت کاری</p>
+						<p class="info">
+							شنبه تا پنجشنه (۹ تا ۱۸)
+						</p>
+					</div>
+					<div class="col-sm-3 each-part wow zoomIn">
+						<p class="icon">
+							<img src="{% static "accounts/img/icon/work-place.png" %}" alt="img">
+						</p>
+						<p class="title">آدرس ما</p>
+						<p class="info">
+							نوشهر٬ چلندر <br>
+							<small>جنب اکبرجوجه</small>
+						</p>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- ========= //End about info ========= -->
+
+
+		
+
+
+		<!-- ============== Start footer ============== -->
+		<section id="footer">
+			<div class="color-overlay ptt80">
+			 	<div class="container mtb50">
+			 		<div class="row">
+			 			<div class="col-sm-6 col-sm-offset-3 text-center">
+			 				<p class="footer-logo mtb30"><img src="{% static "accounts/img/logo-footer.png" %}" alt="logo"></p>
+			 				<ul class="nav-footer list-inline mtb30">
+			 					<li class="active"><a href="index.html">Home</a></li>
+			 					<li><a href="about.html">About</a></li>
+			 					<li><a href="services.html">Services</a></li>
+			 					<li><a href="portfolio.html">Portfolio</a></li>
+			 					<li><a href="blog.html">Blog</a></li>
+			 					<li><a href="contact.html">Contact</a></li>
+			 				</ul>
+			 				<ul class="social-icon-footer list-inline">
+			 					<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+			 					<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+			 					<li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+			 					<li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+			 					<li><a href="#"><i class="fa fa-pinterest"></i></a></li>
+			 				</ul>
+			 			</div>
+			 		</div> <!-- //row -->
+			 	</div>
+			 </div> <!-- //container -->
+
+			<!-- copyright -->
+			<div class="copyright">
+				<div class="container">
+					<div class="row">
+						<div class="col-sm-6 col-sm-offset-4">
+							<p class="info" dir="rtl">
+								&copy; کلیه حقوق این سایت متعلق به شرکت ویلا تور می باشد. 
+								
+							</p>
+						</div>
+					</div> <!-- //row -->
+				</div> <!-- //container -->
+			</div> <!-- //end copyright -->
+		</section>
+		<!-- ========= //End footer ========= -->
+
+	</div> <!-- //end wrapper -->
+
+  <script src="{% static "accounts/js/jquery.min.js" %}"></script>
+  <script src="{% static "accounts/js/bootstrap.min.js" %}"></script>
+  <!-- animation effects -->
+  <script src="{% static "accounts/js/wow.min.js" %}"></script>
+  <!-- count-down -->
+  <script src="{% static "accounts/js/jquery.inview.min.js" %}"></script>
+  <script src="{% static "accounts/js/jquery.counterup.min.js" %}"></script>
+  <!-- content slider -->
+  <script src="{% static "accounts/js/owl.carousel.min.js" %}"></script>
+  <!-- lightbox -->
+  <script src="{% static "accounts/js/lightbox.min.js" %}"></script>
+  <!-- smooth scrool -->
+  <script src="{% static "accounts/js/smoothscroll.js" %}"></script>
+  <!-- custom js -->
+  <script src="{% static "accounts/js/app.js" %}"></script>
+  
+</body>
+</html>

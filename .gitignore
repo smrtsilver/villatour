@@ -1,0 +1,10 @@
+
+# Virtual Env
+/venv/
+
+# Database
+db.sqlite3
+
+# migrations
+/accounts/migrations/
+/Log/migrations
