@@ -24,10 +24,8 @@ from ckeditor.fields import RichTextField
 
 def get_upload_path(instance, filename):
     # model = instance.content.__class__._meta
-
-    return ""
-    # PATH=os.path.join(MEDIA_ROOT,f'{year}-{month}/{albumid}/{filename}')
-    # return PATH
+    username=instance.user.username
+    return f'profile/{username}/{filename}'
 
 
 class profileModel(models.Model):

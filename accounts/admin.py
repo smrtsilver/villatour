@@ -7,7 +7,7 @@ from nested_admin.nested import NestedModelAdmin, NestedStackedInline, NestedTab
 from accounts.models import *
 
 # admin.site.register(social_platformModel)
-from content.models import ImageModel, ImageAlbumModel, hotspotModel
+from content.models import ImageModel, ProjectModel, hotspotModel
 
 admin.site.register(profileModel)
 
@@ -55,7 +55,7 @@ class ImageInline(NestedTabularInline):
 
 
 class albumInlineInline(NestedTabularInline):
-    model = ImageAlbumModel
+    model = ProjectModel
     extra = 0
     inlines = [ImageInline, ]
 
